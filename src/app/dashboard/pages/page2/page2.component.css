@@ -195,8 +195,8 @@
 }
 
 .badge-success {
-  background: hsl(142.1 76.2% 36.3% / 0.15);
-  color: hsl(142.1 76.2% 36.3%);
+  background: hsl(45 100% 50% / 0.15);
+  color: hsl(45 100% 50%);
 }
 
 .badge-pending {
