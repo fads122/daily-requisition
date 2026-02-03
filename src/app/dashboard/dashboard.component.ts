@@ -1,6 +1,7 @@
 import { Component, signal } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { ThemeService } from '../core/services/theme.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -19,7 +20,13 @@ export class DashboardComponent {
     { label: 'Usage Report', route: '/dashboard/usage-report', icon: 'line-chart' },
   ] as const;
 
+  constructor(public themeService: ThemeService) {}
+
   toggleSidebar() {
     this.collapsed.update((c) => !c);
+  }
+
+  toggleTheme() {
+    this.themeService.toggleTheme();
   }
 }

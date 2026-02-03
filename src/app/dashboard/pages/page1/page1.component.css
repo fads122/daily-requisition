@@ -25,8 +25,8 @@
 
 .stat-card {
   padding: 1.25rem;
-  background: hsl(0 0% 100%);
-  border: 1px solid hsl(214.3 31.8% 91.4%);
+  background: hsl(var(--card));
+  border: 1px solid hsl(var(--border));
   border-radius: 0.5rem;
   box-shadow: 0 1px 2px rgb(0 0 0 / 0.05);
   transition: box-shadow 0.2s;
@@ -45,7 +45,7 @@
 
 .stat-label {
   font-size: 0.8125rem;
-  color: hsl(215.4 16.3% 46.9%);
+  color: hsl(var(--muted-foreground));
 }
 
 .stat-trend {
@@ -64,22 +64,22 @@
 .stat-value {
   font-size: 1.75rem;
   font-weight: 700;
-  color: hsl(222.2 84% 4.9%);
+  color: hsl(var(--foreground));
   margin: 0 0 0.25rem 0;
   letter-spacing: -0.02em;
 }
 
 .stat-subtitle {
   font-size: 0.75rem;
-  color: hsl(215.4 16.3% 46.9%);
+  color: hsl(var(--muted-foreground));
   margin: 0;
   line-height: 1.4;
 }
 
 /* Cards base */
 .card {
-  background: hsl(0 0% 100%);
-  border: 1px solid hsl(214.3 31.8% 91.4%);
+  background: hsl(var(--card));
+  border: 1px solid hsl(var(--border));
   border-radius: 0.5rem;
   box-shadow: 0 1px 2px rgb(0 0 0 / 0.05);
   overflow: hidden;
@@ -88,7 +88,7 @@
 .card-title {
   font-size: 1rem;
   font-weight: 600;
-  color: hsl(222.2 84% 4.9%);
+  color: hsl(var(--foreground));
   margin: 0 0 1rem 0;
 }
 
@@ -120,7 +120,7 @@
 .chart-title {
   font-size: 1rem;
   font-weight: 600;
-  color: hsl(222.2 84% 4.9%);
+  color: hsl(var(--foreground));
   margin: 0;
 }
 
@@ -136,14 +136,14 @@
   border: none;
   border-radius: 0.375rem;
   background: transparent;
-  color: hsl(215.4 16.3% 46.9%);
+  color: hsl(var(--muted-foreground));
   cursor: pointer;
   transition: background 0.15s, color 0.15s;
 }
 
 .tab-btn:hover {
-  background: hsl(210 40% 96.1%);
-  color: hsl(222.2 84% 4.9%);
+  background: hsl(var(--muted));
+  color: hsl(var(--foreground));
 }
 
 .tab-btn.active {
@@ -171,14 +171,14 @@
 
 .chart-subtitle {
   font-size: 0.8125rem;
-  color: hsl(215.4 16.3% 46.9%);
+  color: hsl(var(--muted-foreground));
   margin: 0 0 0.5rem 0;
 }
 
 .chart-total {
   font-size: 1.5rem;
   font-weight: 700;
-  color: hsl(222.2 84% 4.9%);
+  color: hsl(var(--foreground));
   margin: 0 0 1rem 0;
 }
 
@@ -203,7 +203,7 @@
   display: flex;
   justify-content: space-between;
   font-size: 0.75rem;
-  color: hsl(215.4 16.3% 46.9%);
+  color: hsl(var(--muted-foreground));
 }
 
 .chart-body .chart-labels {
@@ -273,13 +273,13 @@
 
 .analytics-label {
   font-size: 0.8125rem;
-  color: hsl(215.4 16.3% 46.9%);
+  color: hsl(var(--muted-foreground));
   margin: 0;
 }
 
 .analytics-desc {
   font-size: 0.875rem;
-  color: hsl(215.4 16.3% 46.9%);
+  color: hsl(var(--muted-foreground));
   margin: 0;
   line-height: 1.5;
 }
@@ -299,12 +299,12 @@
 .table td {
   padding: 0.75rem 1rem;
   text-align: left;
-  border-bottom: 1px solid hsl(214.3 31.8% 91.4%);
+  border-bottom: 1px solid hsl(var(--border));
 }
 
 .table th {
   font-weight: 500;
-  color: hsl(215.4 16.3% 46.9%);
+  color: hsl(var(--muted-foreground));
 }
 
 .table tbody tr:last-child td {
@@ -312,7 +312,7 @@
 }
 
 .table tbody tr:hover td {
-  background: hsl(210 40% 98%);
+  background: hsl(var(--muted));
 }
 
 .font-mono {
