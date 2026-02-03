@@ -1,0 +1,115 @@
+<div class="page-content">
+  <header class="page-header">
+    <h1 class="page-title">Material Requisition</h1>
+    <p class="page-description">Manage material requests and track requisition status.</p>
+  </header>
+
+  <!-- Stats grid -->
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="stat-header">
+        <span class="stat-label">Pending Requests</span>
+        <span class="stat-trend stat-trend-up">+15</span>
+      </div>
+      <p class="stat-value">42</p>
+      <p class="stat-subtitle">Awaiting approval</p>
+    </div>
+    <div class="stat-card">
+      <div class="stat-header">
+        <span class="stat-label">Approved This Week</span>
+        <span class="stat-trend stat-trend-up">+28.3%</span>
+      </div>
+      <p class="stat-value">127</p>
+      <p class="stat-subtitle">Requisitions approved</p>
+    </div>
+    <div class="stat-card">
+      <div class="stat-header">
+        <span class="stat-label">Total Materials</span>
+        <span class="stat-trend stat-trend-up">+12.1%</span>
+      </div>
+      <p class="stat-value">1,234</p>
+      <p class="stat-subtitle">Items requested</p>
+    </div>
+    <div class="stat-card">
+      <div class="stat-header">
+        <span class="stat-label">Avg. Processing</span>
+        <span class="stat-trend stat-trend-down">-0.5 days</span>
+      </div>
+      <p class="stat-value">2.1 days</p>
+      <p class="stat-subtitle">Average turnaround</p>
+    </div>
+  </div>
+
+  <!-- Requisition table -->
+  <div class="card table-card">
+    <div class="card-header">
+      <h3 class="card-title">Recent Requisitions</h3>
+      <div class="card-actions">
+        <div class="search-box">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"/>
+            <path d="M21 21l-4.35-4.35"/>
+          </svg>
+          <input type="text" placeholder="Search..." class="search-input" />
+        </div>
+        <button class="btn btn-primary">New Requisition</button>
+      </div>
+    </div>
+    <div class="table-wrapper">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Requisition ID</th>
+            <th>Material</th>
+            <th>Quantity</th>
+            <th>Requested By</th>
+            <th>Status</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="font-mono">MR-2025-001</td>
+            <td>Steel Sheets</td>
+            <td>500 kg</td>
+            <td>John Smith</td>
+            <td><span class="badge badge-success">Approved</span></td>
+            <td>Feb 3, 2025</td>
+          </tr>
+          <tr>
+            <td class="font-mono">MR-2025-002</td>
+            <td>Electrical Components</td>
+            <td>120 units</td>
+            <td>Sarah Johnson</td>
+            <td><span class="badge badge-pending">Pending</span></td>
+            <td>Feb 2, 2025</td>
+          </tr>
+          <tr>
+            <td class="font-mono">MR-2025-003</td>
+            <td>Raw Materials</td>
+            <td>2,000 kg</td>
+            <td>Mike Davis</td>
+            <td><span class="badge badge-processing">Processing</span></td>
+            <td>Feb 1, 2025</td>
+          </tr>
+          <tr>
+            <td class="font-mono">MR-2025-004</td>
+            <td>Packaging Supplies</td>
+            <td>350 boxes</td>
+            <td>Emily Brown</td>
+            <td><span class="badge badge-success">Approved</span></td>
+            <td>Jan 31, 2025</td>
+          </tr>
+          <tr>
+            <td class="font-mono">MR-2025-005</td>
+            <td>Safety Equipment</td>
+            <td>45 units</td>
+            <td>David Wilson</td>
+            <td><span class="badge badge-pending">Pending</span></td>
+            <td>Jan 30, 2025</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

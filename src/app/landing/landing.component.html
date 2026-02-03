@@ -1,0 +1,254 @@
+<main class="landing">
+  <!-- Navigation -->
+  <nav class="nav">
+    <a routerLink="/" class="nav-logo">
+      <span class="logo-icon">◆</span>
+      <span>Daily Requisition</span>
+    </a>
+    <div class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#benefits">Benefits</a>
+      <a href="#testimonials">Testimonials</a>
+      <a routerLink="/login" class="nav-cta">Sign In</a>
+    </div>
+    <button class="nav-mobile-toggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-orb hero-orb-3"></div>
+      <div class="hero-orb hero-orb-4"></div>
+    </div>
+    <div class="hero-content">
+      <span class="hero-badge animate-float">Streamline Your Operations</span>
+      <h1 class="hero-title">
+        <span class="hero-title-line">Manage Daily</span>
+        <span class="hero-title-line hero-title-accent">Requisitions</span>
+        <span class="hero-title-line">With Ease</span>
+      </h1>
+      <p class="hero-subtitle">
+        The modern platform for tracking inventory requests, approvals, and fulfillment. 
+        Save time, reduce errors, and keep your team in sync.
+      </p>
+      <div class="hero-cta">
+        <a routerLink="/login" class="btn btn-primary">
+          <span>Get Started</span>
+          <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+        <a href="#features" class="btn btn-secondary">Learn More</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-value animate-count">500+</span>
+          <span class="stat-label">Active Users</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value animate-count">10K+</span>
+          <span class="stat-label">Requisitions Processed</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value animate-count">99%</span>
+          <span class="stat-label">Satisfaction</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-visual-bg"></div>
+      <div class="acquisition-card">
+        <div class="acquisition-header">
+          <span class="acquisition-header-icon">◆</span>
+          <span>Acquisition Process</span>
+        </div>
+        <div class="acquisition-content">
+          <div class="acquisition-step">
+            <span class="step-num">1</span>
+            <span>Submit requisition request</span>
+          </div>
+          <div class="acquisition-step">
+            <span class="step-num">2</span>
+            <span>Approval workflow</span>
+          </div>
+          <div class="acquisition-step">
+            <span class="step-num">3</span>
+            <span>Items acquired & delivered</span>
+          </div>
+        </div>
+        <div class="acquisition-cta">
+          <p class="cta-text">Streamline your workflow</p>
+          <a routerLink="/login" class="acquisition-btn">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="section features">
+    <div class="section-header animateOnScroll" #animateOnScroll>
+      <span class="section-badge">Features</span>
+      <h2 class="section-title">Everything You Need to Stay Organized</h2>
+      <p class="section-subtitle">Powerful tools designed for teams who demand efficiency and clarity.</p>
+    </div>
+    <div class="features-grid">
+      <article class="feature-card animateOnScroll" #animateOnScroll>
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+          </svg>
+        </div>
+        <h3>Quick Requisition Creation</h3>
+        <p>Create and submit requisition requests in seconds. Intuitive forms with smart defaults.</p>
+      </article>
+      <article class="feature-card animateOnScroll" #animateOnScroll>
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+        </div>
+        <h3>Approval Workflows</h3>
+        <p>Streamlined approval chains with notifications and status tracking at every step.</p>
+      </article>
+      <article class="feature-card animateOnScroll" #animateOnScroll>
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+          </svg>
+        </div>
+        <h3>Real-Time Analytics</h3>
+        <p>Dashboard insights on requisition volume, turnaround times, and inventory trends.</p>
+      </article>
+      <article class="feature-card animateOnScroll" #animateOnScroll>
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+          </svg>
+        </div>
+        <h3>Secure & Compliant</h3>
+        <p>Role-based access, audit logs, and compliance-ready data handling.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section id="benefits" class="section benefits">
+    <div class="benefits-content">
+      <div class="benefits-text animateOnScroll" #animateOnScroll>
+        <span class="section-badge">Benefits</span>
+        <h2 class="section-title">Why Teams Choose Daily Requisition</h2>
+        <ul class="benefits-list">
+          <li>
+            <span class="benefit-check">✓</span>
+            <span>Reduce manual paperwork by up to 80%</span>
+          </li>
+          <li>
+            <span class="benefit-check">✓</span>
+            <span>Faster approval cycles with automated routing</span>
+          </li>
+          <li>
+            <span class="benefit-check">✓</span>
+            <span>Full visibility into request status for everyone</span>
+          </li>
+          <li>
+            <span class="benefit-check">✓</span>
+            <span>Integrate with existing systems via API</span>
+          </li>
+        </ul>
+      </div>
+      <div class="benefits-visual animateOnScroll" #animateOnScroll>
+        <div class="benefits-card">
+          <div class="benefits-card-glow"></div>
+          <div class="benefits-card-inner">
+            <div class="pulse-dot"></div>
+            <p>Request submitted</p>
+            <div class="progress-bar">
+              <div class="progress-fill"></div>
+            </div>
+            <p class="status">Approved ✓</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="section testimonials">
+    <div class="section-header animateOnScroll" #animateOnScroll>
+      <span class="section-badge">Testimonials</span>
+      <h2 class="section-title">Loved by Operations Teams</h2>
+    </div>
+    <div class="testimonials-grid">
+      <blockquote class="testimonial-card animateOnScroll" #animateOnScroll>
+        <div class="testimonial-stars">★★★★★</div>
+        <p>"Daily Requisition transformed how we handle inventory requests. What used to take days now takes hours."</p>
+        <footer>
+          <div class="testimonial-avatar">JM</div>
+          <div>
+            <strong>Jane Martinez</strong>
+            <span>Operations Manager, TechCorp</span>
+          </div>
+        </footer>
+      </blockquote>
+      <blockquote class="testimonial-card animateOnScroll" #animateOnScroll>
+        <div class="testimonial-stars">★★★★★</div>
+        <p>"The approval workflow is intuitive and the reporting has given us insights we never had before."</p>
+        <footer>
+          <div class="testimonial-avatar">DK</div>
+          <div>
+            <strong>David Kim</strong>
+            <span>Procurement Lead, Global Inc</span>
+          </div>
+        </footer>
+      </blockquote>
+      <blockquote class="testimonial-card animateOnScroll" #animateOnScroll>
+        <div class="testimonial-stars">★★★★★</div>
+        <p>"Clean interface, fast performance, and excellent support. Highly recommend for any growing team."</p>
+        <footer>
+          <div class="testimonial-avatar">SC</div>
+          <div>
+            <strong>Sarah Chen</strong>
+            <span>Supply Chain Director</span>
+          </div>
+        </footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section cta">
+    <div class="cta-card animateOnScroll" #animateOnScroll>
+      <div class="cta-glow"></div>
+      <h2>Ready to Simplify Your Requisitions?</h2>
+      <p>Join hundreds of teams already using Daily Requisition to streamline their operations.</p>
+      <a routerLink="/login" class="btn btn-primary btn-large">
+        <span>Get Started Free</span>
+        <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <span class="logo-icon">◆</span>
+        <span>Daily Requisition</span>
+      </div>
+      <div class="footer-links">
+        <a href="#features">Features</a>
+        <a href="#benefits">Benefits</a>
+        <a href="#testimonials">Testimonials</a>
+        <a routerLink="/login">Sign In</a>
+      </div>
+      <p class="footer-copy">&copy; {{ currentYear }} Daily Requisition. All rights reserved.</p>
+    </div>
+  </footer>
+</main>

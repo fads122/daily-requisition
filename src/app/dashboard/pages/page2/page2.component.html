@@ -1,0 +1,108 @@
+<div class="page-content">
+  <header class="page-header">
+    <h1 class="page-title">Daily Production</h1>
+    <p class="page-description">Track and monitor daily production metrics and output.</p>
+  </header>
+
+  <!-- Stats grid -->
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="stat-header">
+        <span class="stat-label">Today's Output</span>
+        <span class="stat-trend stat-trend-up">+12.5%</span>
+      </div>
+      <p class="stat-value">2,847</p>
+      <p class="stat-subtitle">Units produced today</p>
+    </div>
+    <div class="stat-card">
+      <div class="stat-header">
+        <span class="stat-label">Weekly Average</span>
+        <span class="stat-trend stat-trend-up">+8.2%</span>
+      </div>
+      <p class="stat-value">19,234</p>
+      <p class="stat-subtitle">Average units per week</p>
+    </div>
+    <div class="stat-card">
+      <div class="stat-header">
+        <span class="stat-label">Efficiency Rate</span>
+        <span class="stat-trend stat-trend-up">+5.1%</span>
+      </div>
+      <p class="stat-value">94.2%</p>
+      <p class="stat-subtitle">Production efficiency</p>
+    </div>
+    <div class="stat-card">
+      <div class="stat-header">
+        <span class="stat-label">Active Lines</span>
+        <span class="stat-trend stat-trend-down">-2</span>
+      </div>
+      <p class="stat-value">8</p>
+      <p class="stat-subtitle">Production lines running</p>
+    </div>
+  </div>
+
+  <!-- Production table -->
+  <div class="card table-card">
+    <div class="card-header">
+      <h3 class="card-title">Production Log</h3>
+      <div class="card-actions">
+        <select class="select">
+          <option>All Lines</option>
+          <option>Line 1</option>
+          <option>Line 2</option>
+          <option>Line 3</option>
+        </select>
+        <button class="btn btn-primary">Export Report</button>
+      </div>
+    </div>
+    <div class="table-wrapper">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Line</th>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>08:00 AM</td>
+            <td>Line 1</td>
+            <td>Product A</td>
+            <td>450</td>
+            <td><span class="badge badge-success">Completed</span></td>
+          </tr>
+          <tr>
+            <td>09:15 AM</td>
+            <td>Line 2</td>
+            <td>Product B</td>
+            <td>320</td>
+            <td><span class="badge badge-success">Completed</span></td>
+          </tr>
+          <tr>
+            <td>10:30 AM</td>
+            <td>Line 3</td>
+            <td>Product C</td>
+            <td>280</td>
+            <td><span class="badge badge-pending">In Progress</span></td>
+          </tr>
+          <tr>
+            <td>11:45 AM</td>
+            <td>Line 1</td>
+            <td>Product A</td>
+            <td>380</td>
+            <td><span class="badge badge-processing">Processing</span></td>
+          </tr>
+          <tr>
+            <td>01:00 PM</td>
+            <td>Line 4</td>
+            <td>Product D</td>
+            <td>520</td>
+            <td><span class="badge badge-success">Completed</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

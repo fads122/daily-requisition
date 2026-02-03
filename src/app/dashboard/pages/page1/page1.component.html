@@ -1,0 +1,165 @@
+<div class="page-content">
+  <!-- Metric cards -->
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="stat-header">
+        <span class="stat-label">Total Requisitions</span>
+        <span class="stat-trend stat-trend-up">+59.3%</span>
+      </div>
+      <p class="stat-value">4,42,236</p>
+      <p class="stat-subtitle">You made an extra 35,000 this year.</p>
+    </div>
+    <div class="stat-card">
+      <div class="stat-header">
+        <span class="stat-label">Items Acquired</span>
+        <span class="stat-trend stat-trend-up">+70.5%</span>
+      </div>
+      <p class="stat-value">78,250</p>
+      <p class="stat-subtitle">You made an extra 8,900 this year.</p>
+    </div>
+    <div class="stat-card">
+      <div class="stat-header">
+        <span class="stat-label">Pending Acquisitions</span>
+        <span class="stat-trend stat-trend-down">-27.4%</span>
+      </div>
+      <p class="stat-value">18,800</p>
+      <p class="stat-subtitle">You made an extra 1,943 this year.</p>
+    </div>
+    <div class="stat-card">
+      <div class="stat-header">
+        <span class="stat-label">Total Acquisition Value</span>
+        <span class="stat-trend stat-trend-down">-27.4%</span>
+      </div>
+      <p class="stat-value">$35,078</p>
+      <p class="stat-subtitle">You made an extra $20,395 this year.</p>
+    </div>
+  </div>
+
+  <!-- Charts row -->
+  <div class="charts-row">
+    <div class="card chart-card">
+      <div class="chart-header">
+        <h3 class="chart-title">Acquisition Activity</h3>
+        <div class="chart-tabs">
+          <button class="tab-btn active">Week</button>
+          <button class="tab-btn">Month</button>
+        </div>
+      </div>
+      <div class="chart-body">
+        <div class="area-chart">
+          <svg viewBox="0 0 400 120" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="areaGradient1" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="hsl(217.2 91.2% 59.8%)" stop-opacity="0.4"/>
+                <stop offset="100%" stop-color="hsl(217.2 91.2% 59.8%)" stop-opacity="0"/>
+              </linearGradient>
+              <linearGradient id="areaGradient2" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="hsl(142 76% 36%)" stop-opacity="0.3"/>
+                <stop offset="100%" stop-color="hsl(142 76% 36%)" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <path fill="url(#areaGradient1)" d="M0 80 Q50 70 100 60 T200 50 T300 45 T400 40 L400 120 L0 120 Z"/>
+            <path fill="none" stroke="hsl(217.2 91.2% 59.8%)" stroke-width="2" d="M0 80 Q50 70 100 60 T200 50 T300 45 T400 40"/>
+            <path fill="url(#areaGradient2)" d="M0 90 Q50 85 100 75 T200 65 T300 70 T400 55 L400 120 L0 120 Z"/>
+            <path fill="none" stroke="hsl(142 76% 36%)" stroke-width="2" d="M0 90 Q50 85 100 75 T200 65 T300 70 T400 55"/>
+          </svg>
+        </div>
+        <div class="chart-labels">
+          <span>Mon</span>
+          <span>Tue</span>
+          <span>Wed</span>
+          <span>Thu</span>
+          <span>Fri</span>
+          <span>Sat</span>
+          <span>Sun</span>
+        </div>
+        <div class="chart-legend">
+          <div class="legend-item">
+            <span class="legend-dot legend-dot-blue"></span>
+            <span>Requisitions</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-dot legend-dot-green"></span>
+            <span>Acquisitions</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card chart-card chart-card-compact">
+      <h3 class="chart-title">Acquisition Value</h3>
+      <p class="chart-subtitle">This Week Statistics</p>
+      <p class="chart-total">$7,650</p>
+      <div class="bar-chart">
+        <div class="bar" style="--h: 65%"></div>
+        <div class="bar" style="--h: 85%"></div>
+        <div class="bar" style="--h: 45%"></div>
+        <div class="bar" style="--h: 90%"></div>
+        <div class="bar" style="--h: 70%"></div>
+        <div class="bar" style="--h: 95%"></div>
+        <div class="bar" style="--h: 80%"></div>
+      </div>
+      <div class="chart-labels">
+        <span>Mo</span>
+        <span>Tu</span>
+        <span>We</span>
+        <span>Th</span>
+        <span>Fr</span>
+        <span>Sa</span>
+        <span>Su</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom sections -->
+  <div class="bottom-row">
+    <div class="card table-card">
+      <h3 class="card-title">Recent Acquisitions</h3>
+      <div class="table-wrapper">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Item</th>
+              <th>Status</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="font-mono">REQ-0847</td>
+              <td>Office Supplies</td>
+              <td><span class="badge badge-success">Acquired</span></td>
+              <td>Feb 3, 2025</td>
+            </tr>
+            <tr>
+              <td class="font-mono">REQ-0846</td>
+              <td>IT Equipment</td>
+              <td><span class="badge badge-pending">In Transit</span></td>
+              <td>Feb 2, 2025</td>
+            </tr>
+            <tr>
+              <td class="font-mono">REQ-0845</td>
+              <td>Cleaning Supplies</td>
+              <td><span class="badge badge-success">Acquired</span></td>
+              <td>Feb 1, 2025</td>
+            </tr>
+            <tr>
+              <td class="font-mono">REQ-0844</td>
+              <td>Safety Equipment</td>
+              <td><span class="badge badge-processing">Processing</span></td>
+              <td>Jan 31, 2025</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="card analytics-card">
+      <h3 class="card-title">Analytics Report</h3>
+      <div class="analytics-summary">
+        <p class="analytics-value">98.5%</p>
+        <p class="analytics-label">Acquisition success rate</p>
+      </div>
+      <p class="analytics-desc">Your requisition fulfillment is performing above average. Keep up the great work.</p>
+    </div>
+  </div>
+</div>

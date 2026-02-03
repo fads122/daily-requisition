@@ -48,7 +48,7 @@ export class LoginComponent {
     // Simulate API call - replace with actual auth logic
     setTimeout(() => {
       this.isSubmitting = false;
-      this.router.navigate(['/home']);
+      this.router.navigate(['/dashboard']);
     }, 1500);
   }
 }

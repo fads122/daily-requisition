@@ -1,0 +1,167 @@
+<div class="page-content">
+  <header class="page-header">
+    <h1 class="page-title">Usage Report</h1>
+    <p class="page-description">Analyze material usage patterns and generate comprehensive reports.</p>
+  </header>
+
+  <!-- Stats grid -->
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="stat-header">
+        <span class="stat-label">Total Usage</span>
+        <span class="stat-trend stat-trend-up">+18.7%</span>
+      </div>
+      <p class="stat-value">45,678</p>
+      <p class="stat-subtitle">Units consumed this month</p>
+    </div>
+    <div class="stat-card">
+      <div class="stat-header">
+        <span class="stat-label">Avg. Daily Usage</span>
+        <span class="stat-trend stat-trend-up">+5.2%</span>
+      </div>
+      <p class="stat-value">1,523</p>
+      <p class="stat-subtitle">Average units per day</p>
+    </div>
+    <div class="stat-card">
+      <div class="stat-header">
+        <span class="stat-label">Peak Usage Day</span>
+        <span class="stat-trend stat-trend-down">-3.1%</span>
+      </div>
+      <p class="stat-value">2,847</p>
+      <p class="stat-subtitle">Highest single day usage</p>
+    </div>
+    <div class="stat-card">
+      <div class="stat-header">
+        <span class="stat-label">Efficiency Score</span>
+        <span class="stat-trend stat-trend-up">+2.4%</span>
+      </div>
+      <p class="stat-value">87.3%</p>
+      <p class="stat-subtitle">Material utilization rate</p>
+    </div>
+  </div>
+
+  <!-- Charts row -->
+  <div class="charts-row">
+    <div class="card chart-card">
+      <div class="chart-header">
+        <h3 class="chart-title">Usage Trend</h3>
+        <div class="chart-tabs">
+          <button class="tab-btn active">Week</button>
+          <button class="tab-btn">Month</button>
+        </div>
+      </div>
+      <div class="chart-body">
+        <div class="area-chart">
+          <svg viewBox="0 0 400 120" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="usageGradient" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="hsl(217.2 91.2% 59.8%)" stop-opacity="0.4"/>
+                <stop offset="100%" stop-color="hsl(217.2 91.2% 59.8%)" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <path fill="url(#usageGradient)" d="M0 90 Q50 75 100 65 T200 55 T300 50 T400 45 L400 120 L0 120 Z"/>
+            <path fill="none" stroke="hsl(217.2 91.2% 59.8%)" stroke-width="2" d="M0 90 Q50 75 100 65 T200 55 T300 50 T400 45"/>
+          </svg>
+        </div>
+        <div class="chart-labels">
+          <span>Mon</span>
+          <span>Tue</span>
+          <span>Wed</span>
+          <span>Thu</span>
+          <span>Fri</span>
+          <span>Sat</span>
+          <span>Sun</span>
+        </div>
+      </div>
+    </div>
+    <div class="card chart-card chart-card-compact">
+      <h3 class="chart-title">Material Categories</h3>
+      <p class="chart-subtitle">Usage by Category</p>
+      <div class="bar-chart">
+        <div class="bar" style="--h: 75%"></div>
+        <div class="bar" style="--h: 90%"></div>
+        <div class="bar" style="--h: 60%"></div>
+        <div class="bar" style="--h: 85%"></div>
+        <div class="bar" style="--h: 70%"></div>
+      </div>
+      <div class="chart-labels">
+        <span>Raw</span>
+        <span>Parts</span>
+        <span>Supplies</span>
+        <span>Tools</span>
+        <span>Other</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Usage table -->
+  <div class="card table-card">
+    <div class="card-header">
+      <h3 class="card-title">Detailed Usage Report</h3>
+      <div class="card-actions">
+        <select class="select">
+          <option>Last 7 days</option>
+          <option>Last 30 days</option>
+          <option>Last 90 days</option>
+        </select>
+        <button class="btn btn-primary">Export PDF</button>
+      </div>
+    </div>
+    <div class="table-wrapper">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Material</th>
+            <th>Category</th>
+            <th>Quantity Used</th>
+            <th>Unit</th>
+            <th>Cost</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Feb 3, 2025</td>
+            <td>Steel Sheets</td>
+            <td>Raw Materials</td>
+            <td>450</td>
+            <td>kg</td>
+            <td>$2,250</td>
+          </tr>
+          <tr>
+            <td>Feb 2, 2025</td>
+            <td>Electrical Components</td>
+            <td>Parts</td>
+            <td>120</td>
+            <td>units</td>
+            <td>$1,800</td>
+          </tr>
+          <tr>
+            <td>Feb 1, 2025</td>
+            <td>Packaging Supplies</td>
+            <td>Supplies</td>
+            <td>350</td>
+            <td>boxes</td>
+            <td>$875</td>
+          </tr>
+          <tr>
+            <td>Jan 31, 2025</td>
+            <td>Safety Equipment</td>
+            <td>Tools</td>
+            <td>45</td>
+            <td>units</td>
+            <td>$1,350</td>
+          </tr>
+          <tr>
+            <td>Jan 30, 2025</td>
+            <td>Raw Materials</td>
+            <td>Raw Materials</td>
+            <td>2,000</td>
+            <td>kg</td>
+            <td>$10,000</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

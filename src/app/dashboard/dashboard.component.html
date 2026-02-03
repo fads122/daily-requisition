@@ -1,0 +1,118 @@
+<div class="dashboard" [class.sidebar-collapsed]="collapsed()">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <a routerLink="/" class="sidebar-logo">
+        <span class="logo-icon">◆</span>
+        <span class="logo-text">Daily Req</span>
+      </a>
+    </div>
+    <nav class="sidebar-nav">
+      <div class="nav-section">
+        @for (item of navItems; track item.route) {
+          <a
+            [routerLink]="item.route"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: item.route === '/dashboard' }"
+            class="nav-item"
+          >
+            <span class="nav-icon">
+              @switch (item.icon) {
+                @case ('dashboard') {
+                  <!-- Bar chart with colored bars -->
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="3" y="12" width="3" height="6" fill="#22c55e" rx="0.5"/>
+                    <rect x="7" y="8" width="3" height="10" fill="#a855f7" rx="0.5"/>
+                    <rect x="11" y="14" width="3" height="4" fill="#ef4444" rx="0.5"/>
+                    <rect x="15" y="6" width="3" height="12" fill="#3b82f6" rx="0.5"/>
+                  </svg>
+                }
+                @case ('factory') {
+                  <!-- Factory/Industrial building -->
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/>
+                    <path d="M9 9v0M9 15v0M15 11v0M15 17v0"/>
+                  </svg>
+                }
+                @case ('document') {
+                  <!-- Document with pencil -->
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+                    <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/>
+                    <path d="M18 2l4 4"/>
+                  </svg>
+                }
+                @case ('line-chart') {
+                  <!-- Line chart with upward trend -->
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 18l6-6 4 4 8-8"/>
+                    <path d="M21 12h-4v4"/>
+                  </svg>
+                }
+              }
+            </span>
+            <span class="nav-label">{{ item.label }}</span>
+          </a>
+        }
+      </div>
+    </nav>
+    <div class="sidebar-footer">
+      <a routerLink="/login" class="nav-item nav-item-footer">
+        <span class="nav-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4M16 17l5-5-5-5M21 12h-8"/>
+          </svg>
+        </span>
+        <span class="nav-label">Sign out</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- Main layout -->
+  <div class="main-wrapper">
+    <!-- Header bar -->
+    <header class="header">
+      <div class="header-left">
+        <button
+          type="button"
+          class="header-menu-btn"
+          (click)="toggleSidebar()"
+          aria-label="Toggle menu"
+        >
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+        <div class="header-search">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"/>
+            <path d="M21 21l-4.35-4.35"/>
+          </svg>
+          <input type="text" placeholder="Search here..." class="search-input" />
+        </div>
+      </div>
+      <div class="header-right">
+        <button type="button" class="header-icon-btn" aria-label="Notifications">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0"/>
+          </svg>
+        </button>
+        <button type="button" class="header-icon-btn" aria-label="Settings">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="3"/>
+            <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"/>
+          </svg>
+        </button>
+        <div class="header-user">
+          <div class="user-avatar">SB</div>
+          <span class="user-name">Stebin Ben</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main content -->
+    <main class="main">
+      <router-outlet />
+    </main>
+  </div>
+</div>
