@@ -8,7 +8,7 @@
 /* ========== Brand Panel ========== */
 .brand-panel {
   flex: 1;
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #0f172a 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,7 +27,7 @@
 .logo-mark {
   width: 64px;
   height: 64px;
-  color: #22d3ee;
+  color: #f59e0b;
   margin-bottom: 2rem;
   animation: logoPulse 2s ease-in-out infinite;
 }
@@ -72,7 +72,7 @@
 .shape-1 {
   width: 400px;
   height: 400px;
-  background: linear-gradient(135deg, #22d3ee, #06b6d4);
+  background: linear-gradient(135deg, #f59e0b, #d97706);
   top: -150px;
   right: -100px;
   animation-delay: 0s;
@@ -81,7 +81,7 @@
 .shape-2 {
   width: 250px;
   height: 250px;
-  background: linear-gradient(135deg, #a78bfa, #8b5cf6);
+  background: linear-gradient(135deg, #1e40af, #1e3a8a);
   bottom: -50px;
   left: -80px;
   animation-delay: -5s;
@@ -90,7 +90,7 @@
 .shape-3 {
   width: 150px;
   height: 150px;
-  background: linear-gradient(135deg, #34d399, #10b981);
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
   top: 40%;
   left: 20%;
   animation-delay: -10s;
@@ -99,7 +99,7 @@
 .shape-4 {
   width: 80px;
   height: 80px;
-  background: linear-gradient(135deg, #f472b6, #ec4899);
+  background: linear-gradient(135deg, #3b82f6, #1e40af);
   top: 20%;
   right: 25%;
   animation-delay: -7s;
@@ -108,7 +108,7 @@
 .shape-5 {
   width: 120px;
   height: 120px;
-  background: linear-gradient(135deg, #22d3ee, #0ea5e9);
+  background: linear-gradient(135deg, #f59e0b, #d97706);
   bottom: 25%;
   right: 15%;
   animation-delay: -12s;
@@ -187,9 +187,9 @@
 
 .input-wrapper.focused,
 .input-wrapper:focus-within {
-  border-color: #06b6d4;
+  border-color: #1e40af;
   background: #ffffff;
-  box-shadow: 0 0 0 4px rgba(6, 182, 212, 0.15);
+  box-shadow: 0 0 0 4px rgba(30, 64, 175, 0.15);
 }
 
 .input-wrapper.error {
@@ -220,7 +220,7 @@
 
 .input-wrapper.focused .input-icon,
 .input-wrapper:focus-within .input-icon {
-  color: #06b6d4;
+  color: #1e40af;
 }
 
 .input-wrapper.error .input-icon {
@@ -240,7 +240,7 @@
 }
 
 .toggle-password:hover {
-  color: #06b6d4;
+  color: #1e40af;
 }
 
 .toggle-password svg {
@@ -291,8 +291,8 @@
 }
 
 .checkbox-wrapper input:checked + .checkmark {
-  background: #06b6d4;
-  border-color: #06b6d4;
+  background: #1e40af;
+  border-color: #1e40af;
 }
 
 .checkbox-wrapper input:checked + .checkmark::after {
@@ -307,14 +307,14 @@
 
 .forgot-link {
   font-size: 0.875rem;
-  color: #06b6d4;
+  color: #1e40af;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s ease;
 }
 
 .forgot-link:hover {
-  color: #0891b2;
+  color: #1e3a8a;
   text-decoration: underline;
 }
 
@@ -325,7 +325,7 @@
   font-size: 1rem;
   font-weight: 600;
   color: white;
-  background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
+  background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
   border: none;
   border-radius: 12px;
   cursor: pointer;
@@ -336,7 +336,7 @@
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
-  box-shadow: 0 4px 14px 0 rgba(6, 182, 212, 0.35);
+  box-shadow: 0 4px 14px 0 rgba(30, 64, 175, 0.35);
 }
 
 .submit-btn::before {
@@ -350,7 +350,7 @@
 
 .submit-btn:hover:not(:disabled) {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px 0 rgba(6, 182, 212, 0.45);
+  box-shadow: 0 6px 20px 0 rgba(30, 64, 175, 0.45);
 }
 
 .submit-btn:hover:not(:disabled)::before {
@@ -383,14 +383,14 @@
 }
 
 .signup-prompt a {
-  color: #06b6d4;
+  color: #1e40af;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s ease;
 }
 
 .signup-prompt a:hover {
-  color: #0891b2;
+  color: #1e3a8a;
   text-decoration: underline;
 }
 
